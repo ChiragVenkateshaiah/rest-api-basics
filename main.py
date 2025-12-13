@@ -7,5 +7,9 @@ app = FastAPI()
 def greet():
     return "Hey, Backend Developer"
 
-
 greet()
+
+@app.get("/products")
+def get_all_products():
+    return "all products"
+

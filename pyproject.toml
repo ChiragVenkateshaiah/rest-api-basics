@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 88
+exclude = '''
+/(
+    fastapienv
+   | __pycache__
+)/
+'''
+
+
+[tool.isort]
+profile = "black"
+skip = [
+    "fastapienv",
+    "__pycache__"
+]
